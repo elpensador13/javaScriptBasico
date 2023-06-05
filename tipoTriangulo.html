@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+      <html lang="es">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipo de triángulo</title>
+    <!-- La siguiente línea vincula nuestra página con los estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+<header>
+<h1 class="text-center bg-info">Descubre que tipo de triángulo es:</h1>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Bootcamp ilumina</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="suma5numeros.html">Suma de 5 números</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" active aria-current="page" href="tipoTriangulo.html">Tipo de triángulo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tablasDeMultiplicar.html">Tablas de multiplicar</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>  
+  </header>
+  <div class="row">
+    <div class="col-12">
+      <main>      
+  <h2 class="text-uppercase fw-bold text-muted">Los triángulos</h2>
+<p class="p-3">
+  Un triángulo es una figura geométrica que consta de tres lados y tres ángulos. Es una de las formas más simples y básicas en la geometría, y se utiliza en muchos cálculos y problemas matemáticos. Los triángulos pueden ser clasificados de diferentes maneras según la longitud de sus lados y la medida de sus ángulos. Por ejemplo, un triángulo equilátero tiene tres lados de la misma longitud y tres ángulos iguales de 60 grados cada uno, mientras que un triángulo escaleno tiene tres lados de longitudes diferentes y tres ángulos diferentes.
+</p>    
+<p class="p-3">
+  En el siguiente formulario ingresa los valores de cada lado del triángulo y da click en el botón determina el tipo de triángulo.
+</p>
+</div>
+</div>
+<div class="row">
+  <div class="col-12">
+<form id="formulario" name="triangulos" action="">
+<lavel for="l1" class="form-label">Escribe la primera médida del triángulo:</lavel></lavel> 
+<input type="number" class="form-control" id="l1" name="l1" min="1" max="1000000" step="0.1" required>     
+<lavel for="l2" class="form-label">Escribe la segunda médida del triángulo:</lavel></lavel> 
+<input type="number" class="form-control" id="l2" name="l2" min="1" max="1000000" step="0.1" required>     
+<lavel for="l3" class="form-label">Escribe la tercer médida del triángulo:</lavel></lavel> 
+<input type="number" class="form-control" id="l3" name="l3" min="1" max="1000000" step="0.1" required>     
+</div>
+</div>
+<div class="col-12">
+<!--crearemos el botón que desencadené una función en javascript--> 
+<button type="button" class="btn btn-primary" id="boton">Determinar tipo de triángulo</button>
+<button type="button" class="btn btn-primary" id="boton1">Limpiar formulario</button>
+</form  >    
+</div>
+<div class="col-12" id="result">
+
+<!--aquí aparecerá el tipo d  e triángulo en imágen--> 
+</div>
+
+  </main>
+</div>
+  
+<!--En este ejemplo, he utilizado algunas de las clases de Bootstrap 5 para darle estilo al footer:
+• bg-dark: para darle un fondo oscuro.
+• text-light: para que el texto se muestre en color blanco sobre el fondo oscuro.
+• py-3: para agregar un padding vertical de 3 unidades (puedes ajustar este valor según tus necesidades).
+• container: para crear un contenedor que tenga un ancho máximo y se centre en la página.
+• row: para crear una fila que contenga dos columnas.
+• col-sm-6: para dividir la fila en dos columnas del mismo tamaño para dispositivos pequeños y mayores.
+• text-end: para alinear el texto de la segunda columna a la derecha.-->
+<footer class="bg-dark text-light py-3">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <p>&copy; 2023 Francisco Fuentes</p>
+    </div>
+    <div class="col-sm-6 text-end">
+      <p>Política de privacidad | Términos y condiciones</p>
+    </div>
+  </div>
+</div>
+</footer>
+<!-- La siguiente línea vincula nuestra página con los scripts necesarios para trabajar con Bootstrap  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="tipoTriangulo.js"></script>
+</body>
+</html>
